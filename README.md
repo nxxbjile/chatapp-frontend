@@ -26,5 +26,5 @@ ChatApp frontend is the **frontend** part of the **ChatApp web app** which is a 
 
 
 # Project live on
-> 
+> https://hr-chatapp.netlify.app
 ### thats it, enjoy.
