@@ -21,7 +21,7 @@ const MessageBox = () => {
     }
     const postMessage = async (data) => {
       var res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/room/${currRoom._id}/message`, data);
-      console.log("post message :", res);
+      // console.log("post message :", res);
     }
 
     const handleMessageSend = () => {
@@ -64,9 +64,9 @@ const MessageBox = () => {
       setMessage("");
     }
 
-    useEffect(()=>{
-      console.log("chats : ", chats);
-    },[chats])
+    // useEffect(()=>{
+    //   console.log("chats : ", chats);
+    // },[chats])
 
   return (
     <div className={`fixed bottom-0 w-full min-h-16 h-fit p-2 bg-neutral-600 flex gap-2`}>

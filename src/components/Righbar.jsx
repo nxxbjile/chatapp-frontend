@@ -14,7 +14,7 @@ const Righbar = () => {
     const handleMembers = (data) => {
       setMembers(data);
       setTotal(members.length);
-      console.log("members : ", members);
+      // console.log("members : ", members);
     };
 
     // Attach socket listener

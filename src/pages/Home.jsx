@@ -38,13 +38,13 @@ const Home = () => {
       console.log('Disconnected from server');
     });
 
-    socket.on('response', (data) => {
-      console.log('Server response:', data);
-    });
+    // socket.on('response', (data) => {
+    //   console.log('Server response:', data);
+    // });
 
     // Cleanup on component unmount
     return () => {
-      socket.off('response');
+      // socket.off('response');
       socket.disconnect();
     };
   }, [socket]);

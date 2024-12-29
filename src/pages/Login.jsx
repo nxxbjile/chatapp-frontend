@@ -42,7 +42,7 @@ const Login = () => {
         if(res.data.success == false){
           setIsLoading(false);
         }
-        console.log(res.data);
+        // console.log(res.data);
         setIsLoading(false);
   
         var user = {

@@ -53,7 +53,7 @@ const Signup = () => {
           withCredentials:true,
         });
         
-        console.log(res.data);
+        // console.log(res.data);
         setIsLoading(false);
         
         if(res.data.success == true){
@@ -74,9 +74,9 @@ const Signup = () => {
     }
   }
 
-  useEffect(()=>{
-    console.log(user);
-  },[user])
+  // useEffect(()=>{
+  //   console.log(user);
+  // },[user])
 
   return (
     <>

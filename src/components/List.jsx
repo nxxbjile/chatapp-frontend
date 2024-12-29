@@ -19,12 +19,12 @@ const List = ( { rooms } ) => {
     const handleRoomClick =async (room) => {
         var res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/room/${room._id}`);
         setChats(res.data.room.chats);
-        console.log("res of handleRoomClick : ",res)
+        // console.log("res of handleRoomClick : ",res)
         if(currRoom){
             socket.emit("room:leave",{roomId:currRoom._id, user:currUser.username});
         }
         setCurrRoom(room);
-        console.log("Room : ", room);
+        // console.log("Room : ", room);
         socket.emit("room:join",{roomId:res.data.room._id, user:currUser.username});
         setMembers([]);
     }
