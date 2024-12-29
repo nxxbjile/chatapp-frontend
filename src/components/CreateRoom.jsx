@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { GlobalContext } from '../contexts/Global';
 import { FaPlus } from 'react-icons/fa6';
+import axios from 'axios';
 
 const CreateRoom = ({ visible, onClick }) => {
     const { baseUrl, currUser } = useContext(GlobalContext);
