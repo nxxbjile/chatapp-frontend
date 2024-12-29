@@ -59,7 +59,7 @@ const Righbar = () => {
     }
   },[socket])
   return (
-    <div className={`fixed top-12 right-0 max-sm:w-full w-1/4 ${rightbarOpen ? 'right-0' : '-right-full'} transition-all duration-300 ease-in-out h-full bg-[#28282B] overflow-y-scroll p-2`}>
+    <div className={`fixed top-12 max-sm:w-full w-1/4 ${rightbarOpen ? 'right-0' : '-right-full'} transition-all duration-300 ease-in-out h-full bg-[#28282B] overflow-y-scroll p-2`}>
       <div onClick={toggleRightbar} className={`absolute top-6 cursor-pointer right-6 bg-neutral-700 text-neutral-400 p-4 text-2xl rounded-full flex items-center justify-center rotate-45`}><FaPlus /></div>
       <RoomInfo name={currRoom.name} total_members={total} />
       <Participents data={members}  />
