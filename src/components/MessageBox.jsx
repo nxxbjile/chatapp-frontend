@@ -69,8 +69,8 @@ const MessageBox = () => {
     },[chats])
 
   return (
-    <div className={`fixed bottom-0 w-3/4 min-h-16 h-fit p-2 flex gap-2`}>
-        <div className={`relative ${isSidebarOpen ? 'w-[45%]' : 'w-[80%]'} flex gap-1 rounded-lg overflow-hidden transition-all duration-300 ease-in-out`}>
+    <div className={`fixed bottom-0 w-full min-h-16 h-fit p-2 flex gap-2`}>
+        <div className={`relative ${isSidebarOpen ? 'w-[80%]' : 'w-[80%]'} flex gap-1 rounded-lg overflow-hidden transition-all duration-300 ease-in-out`}>
             <textarea
             ref={textareaRef}
             onInput={handleInput}

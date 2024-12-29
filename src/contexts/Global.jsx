@@ -6,6 +6,7 @@ const GlobalContext = createContext();
 const Global = ( {children} ) => {
     const [baseUrl, setBaseUrl] = useState(`${import.meta.env.VITE_BACKEND_URL}`);
     const [currRoom, setCurrRoom] = useState({});
+    const [rightbarOpen, setRightbarOpen] = useState(false);
     const [members, setMembers] = useState([]);
     const [rooms, setRooms] = useState([]);
     const [chats, setChats] = useState([]);
@@ -69,6 +70,9 @@ const Global = ( {children} ) => {
         return `${day} ${month} ${year}, ${hours}:${minutes}${period}`;
     }
     
+    const toggleRightbar = () => {
+        setRightbarOpen(!rightbarOpen);
+    }
 
   return (
     <GlobalContext.Provider
@@ -83,6 +87,7 @@ const Global = ( {children} ) => {
             formatDateTimeIST, generateUnique12DigitNumber,
             members, setMembers,
             createRoomVisible, setCreateRoomVisible,
+            rightbarOpen, setRightbarOpen, toggleRightbar,
             toggleCreateRoom,
         }}
     >

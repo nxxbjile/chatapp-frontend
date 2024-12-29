@@ -21,8 +21,8 @@ const CurrentUser = () => {
     <>
       <div className={`flex gap-3 items-center justify-start px-6`}>
         <div className={`w-8 h-8 rounded-full bg-neutral-600 text-neutral-400 flex items-center justify-center`}><FaUserLarge /></div>
-        <div className={`text-neutral-300`}>{currUser ? currUser.username : ""}</div>
-        <div className={`p-1 px-3 font-medium bg-rose-500 text-white text-lg rounded-lg`}>{currUser ? ( <Logout />) : <Login /> }</div>
+        <div className={`max-sm:text-sm text-neutral-300`}>{currUser ? currUser.username : ""}</div>
+        <div className={`p-1 px-3 max-sm:text-sm cursor-pointer font-medium bg-rose-500 text-white text-lg rounded-lg`}>{currUser ? ( <Logout />) : <Login /> }</div>
       </div>
     </>
   )

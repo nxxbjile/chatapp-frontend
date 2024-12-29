@@ -80,8 +80,8 @@ const Signup = () => {
 
   return (
     <>
-      <div className={`w-screen h-screen overflow-hidden flex items-center justify-center bg-[#28282B]`}>
-        <div className={`w-3/12 h-4/5 rounded-2xl border border-neutral-400 flex flex-col p-3 justify-between items-center`}>
+      <div className={`w-screen h-screen overflow-hidden flex items-center justify-center p-2 bg-[#28282B]`}>
+        <div className={`max-w-[400px] w-full h-4/5 rounded-2xl border border-neutral-400 flex flex-col p-3 justify-between items-center`}>
           <div className={`w-full h-fit flex flex-col gap-3 items-center justify-center py-3`}>
 
             <input ref={nameRef} onChange={(e)=>handleInputChange("name", e)} type="text" className="focus:outline-none placeholder:text-neutral-400 p-2 px-3 rounded-md w-3/4 bg-neutral-600 text-neutral-400" placeholder="name" value={user.name} />

@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <div className={`fixed top-0 left-0 z-10 w-full h-12 flex items-center justify-between bg-[#28282B] p-2 border-b border-gray-600 select-none`}>
-        <div onClick={toggleSidebar} className={`text-2xl font-semibold text-rose-500`}>ChatApp</div>
+        <div onClick={toggleSidebar} className={`max-sm:text-lg text-2xl font-semibold text-rose-500 cursor-pointer`}>ChatApp</div>
         {
           createRoomVisible &&
           <div className={`fixed top-0 left-0 z-40 w-screen h-screen flex items-center justify-center backdrop-blur-md transition-all duration-300 ease-in-out`}>

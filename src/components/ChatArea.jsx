@@ -5,7 +5,7 @@ import MessageBox from './MessageBox';
 import Chats from './Chats';
 
 const ChatArea = () => {
-  const { isSidebarOpen, currRoom } = useContext(GlobalContext);
+  const { isSidebarOpen, currRoom, rightbarOpen } = useContext(GlobalContext);
   const chatAreaRef = useRef(null);
 
   // Scroll to the bottom of the chat area when messages are updated
@@ -19,7 +19,7 @@ const ChatArea = () => {
     <div
       ref={chatAreaRef}
       className={`${
-        isSidebarOpen ? 'left-1/4 w-2/4' : 'left-0 w-3/4'
+        isSidebarOpen ? 'w-full' : 'left-0 w-full'
       } fixed top-12 h-screen overflow-y-scroll bg-neutral-700 transition-all duration-300 ease-in-out`}
     >
       <ChatHeader roomName={currRoom?.name || 'Select a Room'} />

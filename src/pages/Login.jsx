@@ -78,8 +78,8 @@ const Login = () => {
   // }, [username, pass])
   return (
     <>
-      <div className={`w-screen h-screen overflow-hidden flex items-center justify-center bg-[#28282B]`}>
-        <div className={`w-3/12 max-sm:w-5/6 h-4/5 rounded-2xl border border-neutral-400 flex flex-col p-3 justify-between items-center`}>
+      <div className={`w-screen h-screen overflow-hidden flex items-center justify-center p-2 bg-[#28282B]`}>
+        <div className={`w-full max-w-[400px] h-4/5 rounded-2xl border border-neutral-400 flex flex-col p-3 justify-between items-center`}>
           <div className={`w-full h-fit flex flex-col gap-3 items-center justify-center py-3`}>
             <input ref={uRef} onChange={(e)=>handleInputChange(setUsername, e)} type="text" className="focus:outline-none placeholder:text-neutral-400 p-2 px-3 rounded-md w-3/4 bg-neutral-600 text-neutral-400" placeholder="username" value={username} required minLength={2} />
             <input ref={pRef} onChange={(e)=>handleInputChange(setPass, e)} type="password" className="focus:outline-none placeholder:text-neutral-400 p-2 px-3 rounded-md w-3/4 bg-neutral-600 text-neutral-400" placeholder="password" value={pass} required minLength={2} />
